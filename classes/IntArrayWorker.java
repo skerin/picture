@@ -2,7 +2,35 @@ public class IntArrayWorker
 {
   /** two dimensional matrix */
   private int[][] matrix = null;
-  
+  public int getCount(int f){
+	  int c=0;
+	  for(int i=0; i<matrix.length; i++){
+		  for(int j=0; j<matrix[0].length; j++){
+			  if(matrix[i][j]==f){
+				  c++;
+			  }
+		  }
+	  }
+	  return c;
+  }
+  public int getLargest(){
+	  int m=matrix[0][0];
+	  for(int i=0; i<matrix.length; i++){
+		  for(int j=0; j<matrix[0].length; j++){
+			  if(matrix[i][j]>m){
+				  m=matrix[i][j];
+			  }
+		  }
+	  }
+	  return m;
+  }
+  public int getColTotal(int u){
+	  int c=0;
+	  for(int i=0; i<matrix.length; i++){
+		  c+=matrix[i][u];
+	  }
+	  return c;
+  }
   /** set the matrix to the passed one
     * @param theMatrix the one to use
     */

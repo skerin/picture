@@ -34,7 +34,36 @@ public class PictureTester
     temple.mirrorTemple();
     temple.explore();
   }
-  
+  public static void testOnlyBlue(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.onlyBlue();
+	  beach.explore();
+  }
+  public static void testNegate(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.negate();
+	  beach.explore();
+  }
+  public static void testMirrorVerticalRightToLeft(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorVerticalRightToLeft();
+	  beach.explore();
+  }
+  public static void testMirrorHorizontal(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorHorizontal();
+	  beach.explore();
+  }
+  public static void testMirrorHorizontalBotToTop(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.mirrorHorizontalBotToTop();
+	  beach.explore();
+  }
   /** Method to test the collage method */
   public static void testCollage()
   {
@@ -42,7 +71,24 @@ public class PictureTester
     canvas.createCollage();
     canvas.explore();
   }
-  
+  public static void testGrayScale(){
+	  Picture beach=new Picture("beach.jpg");
+	  beach.explore();
+	  beach.grayScale();
+	  beach.explore();
+  }
+  public static void testMirrorGull(){
+	  Picture gull=new Picture("seagull.jpg");
+	  gull.explore();
+	  gull.mirrorGull();
+	  gull.explore();
+  }
+  public static void testMirrorArms(){
+	  Picture snow=new Picture("snowman.jpg");
+	  snow.explore();
+	  snow.mirrorArms();
+	  snow.explore();
+  }
   /** Method to test edgeDetection */
   public static void testEdgeDetection()
   {
@@ -58,7 +104,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -80,5 +126,13 @@ public class PictureTester
     //testSetRedToHalfValueInTopHalf();
     //testClearBlueOverValue(200);
     //testGetAverageForColumn(0);
+	//testOnlyBlue();
+	//testNegate();
+	//testGrayScale();
+	//testMirrorVerticalRightToLeft();
+	//testMirrorHorizontal();
+	//testMirrorHorizontalBotToTop();
+	//testMirrorArms();
+	  testMirrorGull();
   }
 }
